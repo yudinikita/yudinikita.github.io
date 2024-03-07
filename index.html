@@ -1,13 +1,825 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
+<html lang="ru" prefix="og: https://ogp.me/ns#">
+  <head itemscope itemtype="http://schema.org/WPHeader">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>yudinikita.ru</title>
+    <meta name="theme-color" content="#4f6177" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png" />
+    <link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#4f6177" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <link rel="alternate" title="yudinikita.ru" href="https://yudinikita.ru/en" hreflang="en" />
+    <link
+      rel="alternate"
+      title="Software Engineer Nikita Yudin from Russia"
+      href="https://yudinikita.ru/en"
+      hreflang="x-default"
+    />
+    <link rel="canonical" href="https://yudinikita.ru" />
+
+    <title itemprop="headline">Инженер-программист Никита Юдина из России</title>
+
+    <meta name="robots" content="index, follow" />
+    <meta
+      itemprop="description"
+      name="description"
+      content="К 2024 году у Никиты было завершено более 10 проектов. Многие из них доступны в свободном доступе на GitHub. Никита специализируется на разработке веб-приложений и имеет опыт работы с различными технологиями. Включая JavaScript (TS), React, NextJS, GraphQL, NodeJS и многие другие."
+    />
+    <meta
+      itemprop="keywords"
+      name="keywords"
+      content="yudinikita, Никита Юдин, Россия, программист, HTML, CSS, JavaScript, TypeScript, веб-технологии, фриланс, алгоритмы, дизайн, React, Next.js, Redux, Frontend, Backend, GitHub, Rick Survival, Dodging Fish, mail@yudinikita.ru, Godot Spin Button"
+    />
+
+    <meta property="og:url" content="https://yudinikita.ru" />
+    <meta property="og:title" content="yudinikita.ru" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta
+      property="og:description"
+      content="К 2024 году у Никиты было завершено более 10 проектов. Многие из них доступны в свободном доступе на GitHub. Никита специализируется на разработке веб-приложений и имеет опыт работы с различными технологиями. Включая JavaScript (TS), React, NextJS, GraphQL, NodeJS и многие другие."
+    />
+    <meta property="og:image" content="https://yudinikita.ru/images/social-share.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:height" content="1080" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:site_name" content="yudinikita" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "dateCreated": "2024-03-07T12:00:00-00:00",
+        "dateModified": "2024-03-07T12:00:00-00:00",
+        "mainEntity": {
+          "@type": "Person",
+          "name": "Никита",
+          "familyName": "Юдин",
+          "additionalName": "Алексеевич",
+          "alternateName": "yudinikita",
+          "description": "Инженер-программист из России",
+          "email": "mailto:mail@yudinikita.ru",
+          "jobTitle": "Инженер-программист",
+          "gender": "Male",
+          "nationality": "RU",
+          "url": "http://yudinikita.ru",
+          "image": "https://yudinikita.ru/images/hero/hero-1920w.jpg",
+          "sameAs": [
+            "https://github.com/yudinikita",
+            "https://t.me/yudinikita_blog",
+            "https://www.linkedin.com/in/yudinikita"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "RU",
+            "addressLocality": "Санкт-Петербург",
+            "addressRegion": "Санкт-Петербург",
+            "postalCode": "191040",
+            "streetAddress": "191040 Пушкинская ул., 10"
+          },
+          "birthDate": "2001-04-15",
+          "birthPlace": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "RU",
+              "addressLocality": "Рязань",
+              "addressRegion": "Рязанская область",
+              "postalCode": "190000"
+            }
+          },
+          "spouse": {
+            "@type": "Person",
+            "name": "Елизавета",
+            "familyName": "Сурова",
+            "additionalName": "Евгеньевна",
+            "alternateName": "Lizyyyn",
+            "gender": "Female"
+          }
+        }
+      }
+    </script>
+
+    <style type="text/css">
+      @font-face {
+        font-family: 'Jost';
+        src: url('/fonts/Jost/Jost-Regular.eot');
+        src: local('Jost Regular'), local('Jost-Regular'),
+          url('/fonts/Jost/Jost-Regular.eot?#iefix') format('embedded-opentype'),
+          url('/fonts/Jost/Jost-Regular.woff2') format('woff2'),
+          url('/fonts/Jost/Jost-Regular.woff') format('woff'),
+          url('/fonts/Jost/Jost-Regular.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
+
+    <link href="/css/style.css" rel="stylesheet" />
+
+    <script type="text/javascript" defer>
+      const SCROLL_THRESHOLD = 50;
+
+      const applyEffect = () => {
+        const scrollPosition = window.scrollY;
+        const bioElement = document.querySelector('.bio');
+
+        if (scrollPosition >= SCROLL_THRESHOLD) {
+          bioElement.classList.add('hero-hide');
+          bioElement.classList.remove('hero-show');
+        } else {
+          bioElement.classList.remove('hero-hide');
+          bioElement.classList.add('hero-show');
+        }
+      };
+
+      const scrollToThreshold = () => {
+        window.scrollTo({
+          top: SCROLL_THRESHOLD,
+          behavior: 'smooth',
+        });
+      };
+
+      const onLoad = () => {
+        applyEffect();
+      };
+
+      const onScroll = () => {
+        applyEffect();
+      };
+
+      const onClickMore = () => {
+        scrollToThreshold();
+      };
+
+      addEventListener('load', onLoad);
+      addEventListener('scroll', onScroll);
+    </script>
   </head>
   <body>
     <div id="root" class="page">
-      <h1>yudinikita.ru</h1>
+      <main id="content" class="page__main" role="main">
+        <section class="bio">
+          <div class="container">
+            <section class="bio__hero">
+              <picture>
+                <source
+                  type="image/webp"
+                  sizes=" (max-width: 768px) 768px,
+                          (max-width: 1120px) 1120px,
+                          (max-width: 1920px) 1920px,
+                          (max-width: 2680px) 2680px,
+                          (max-width: 3440px) 3440px,
+                          100vw"
+                  srcset="
+                    /images/hero/hero-768w.webp   768w,
+                    /images/hero/hero-1120w.webp 1120w,
+                    /images/hero/hero-1920w.webp 1920w,
+                    /images/hero/hero-2680w.webp 2680w,
+                    /images/hero/hero-3440w.webp 3440w
+                  "
+                />
+                <img
+                  srcset="
+                    /images/hero/hero-3440w.jpg 3440w,
+                    /images/hero/hero-2680w.jpg 2680w,
+                    /images/hero/hero-1920w.jpg 1920w,
+                    /images/hero/hero-1120w.jpg 1120w,
+                    /images/hero/hero-768w.jpg   768w
+                  "
+                  sizes=" (max-width: 768px) 768px,
+                          (max-width: 1120px) 1120px,
+                          (max-width: 1920px) 1920px,
+                          (max-width: 2680px) 2680px,
+                          (max-width: 3440px) 3440px,
+                          100vw"
+                  src="/images/hero/hero-768px.jpg"
+                  alt="Фото Юдина Никиты"
+                  title="Инженер-программист Никита Юдин из России"
+                  width="768"
+                  height="960"
+                />
+              </picture>
+              <header
+                class="hero__header"
+                itemscope
+                itemtype="http://schema.org/SiteNavigationElement"
+              >
+                <a
+                  class="social__logo"
+                  itemprop="url"
+                  href="https://t.me/yudinikita_blog"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Открыть Telegram канал Никиты Юдина"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="34"
+                    height="34"
+                    viewbox="0 0 35 35"
+                    role="img"
+                  >
+                    <title>Логотип Никиты Юдина</title>
+                    <defs>
+                      <clippath id="bb">
+                        <use xlink:href="#aa" fill-rule="evenodd" clip-rule="evenodd" />
+                      </clippath>
+                      <path id="aa" d="M36 0v36H0V0h36Z" />
+                    </defs>
+                    <path fill="none" d="M36 0v36H0V0h36Z" />
+                    <g fill-rule="evenodd" clip-path="url(#b)" transform="translate(1 6)">
+                      <path
+                        d="M0 24h4.403V10.703L17.74 24V10.5L13.304 3v10.297L0 0v24ZM22.169 24h4.443l-.003-10.477L34 0h-5.324L24.35 8.283 20.107 0h-5.324l7.386 13.523V24Z"
+                      />
+                    </g>
+                  </svg>
+                </a>
+                <div class="hero__social">
+                  <a
+                    class="social__github"
+                    itemprop="url"
+                    href="https://github.com/yudinikita"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Открыть профиль GitHub Никиты Юдина"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="34"
+                      height="34"
+                      viewBox="0 0 98 96"
+                      role="img"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    class="social__button"
+                    href="https://t.me/yudinikita_blog"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Открыть канал Никиты Юдина в Telegram"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      role="img"
+                    >
+                      <path
+                        d="m1.77404283
+                  9.58769086c4.67714245-1.99564845 7.79596997-3.31130205 9.35648257-3.9469608
+                  4.4555806-1.81493491 5.381412-2.13020854
+                  5.984856-2.14061906.1327219-.0022897.4294781.02992311.6217044.18267827.162312.12898346.2069705.30322179.2283411.42551228.0213705.12229049.047982.40087134.0268279.61854631-.2414495
+                  2.48450744-1.2861975 8.51375174-1.817706 11.29644264-.2249011 1.1774608-.6709749
+                  1.4294697-1.0996928
+                  1.4681058-.9317032.0839651-1.6359598-.4602232-2.5383599-1.0395344-1.412078-.9065075-1.9311138-1.1506648-3.30178003-2.0352487-1.58404193-1.0222898-.71982554-1.5573792.18291533-2.4756292.23625159-.2403103
+                  4.3705401-3.98382431
+                  4.4499945-4.31554914.0099371-.04148774-.12607-.45629906-.2198814-.53795815s-.2322689-.05373486-.3321837-.03152647c-.1416262.03147972-2.397439
+                  1.49167812-6.76743852
+                  4.38059516-.64030496.4305972-1.22027332.6403987-1.73990507.6294043-.5728523-.0121204-1.67479033-.3172064-2.49396798-.5779863-1.00475474-.3198572-1.37564449-.4704946-1.30610794-1.013711.03621894-.2829407.29151946-.57846124.76590154-.88656154z"
+                        fill-rule="evenodd"
+                      />
+                    </svg>
+                    <span>Telegram</span>
+                  </a>
+                  <a
+                    class="social__mail"
+                    itemprop="url"
+                    href="mailto:mail@yudinikita.ru?"
+                    title="Написать на почту Никите Юдину"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="34"
+                      height="34"
+                      viewBox="0 0 20 20"
+                      role="img"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M18.333 2.5c.92 0 1.667.746 1.667 1.667v11.666c0 .92-.746 1.667-1.667 1.667H1.667C.747 17.5 0 16.754 0 15.833V4.167C0 3.247.746 2.5 1.667 2.5h16.666ZM7.168 11.328l-4.91 4.852h15.325l-4.857-4.802L10 13.265l-2.832-1.937ZM18.64 7.292l-4.796 3.316 4.796 4.736V7.292Zm-17.279.061v7.836l4.686-4.631-4.686-3.205Zm16.956-3.532H1.698a.358.358 0 0 0-.25.086.26.26 0 0 0-.085.222v1.62L10 11.656l8.644-5.965V4.199c.001-.134-.03-.231-.092-.292a.306.306 0 0 0-.234-.086Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </header>
+              <article class="hero__text" aria-hidden="true">
+                <h1 class="hero__title">Инженер-программист Никита Юдин из&nbsp;России</h1>
+                <div class="hero__content">
+                  <p>
+                    К&nbsp;2024 году у&nbsp;Никиты было завершено более 10&nbsp;проектов. Многие
+                    из&nbsp;них доступны в&nbsp;свободном доступе на&nbsp;GitHub. Никита
+                    специализируется на&nbsp;разработке веб-приложений и&nbsp;имеет опыт работы
+                    с&nbsp;различными технологиями.
+                  </p>
+                </div>
+              </article>
+              <button
+                class="hero__more"
+                type="button"
+                aria-label="Узнать подробнее биографию Никиты Юдина"
+                title="Узнать подробнее биографию Никиты Юдина"
+                onclick="onClickMore()"
+              >
+                <span>Подробнее</span>
+              </button>
+            </section>
+            <article class="bio__content">
+              <h1 class="bio__title">Инженер-программист Никита Юдин из&nbsp;России</h1>
+              <div class="bio__text">
+                <p>
+                  <u>В&nbsp;начале 2016 года Никита начал</u> путь в&nbsp;программирование
+                  с&nbsp;изучения HTML и&nbsp;CSS, что послужило отправной точкой для создания
+                  своего первого сайта. Одновременно с&nbsp;учебой в&nbsp;школе Никита
+                  самостоятельно изучал язык программирования Python, движок Unity и&nbsp;Delphi.
+                  Через некоторое время он&nbsp;осознал, что программирование, начатое
+                  из&nbsp;стремления к&nbsp;знаниям, переросло в&nbsp;полноценное хобби.
+                </p>
+                <p>
+                  <u>В&nbsp;2017 году Никита работал</u> над расширением знаний в&nbsp;области
+                  веб-технологий, изучив при этом Wordpress, JavaScript, jQuery и&nbsp;PHP. Эти
+                  знания позволили выполнить первый заказ на&nbsp;фрилансе для строительной компании
+                  по&nbsp;разработке сайта. В&nbsp;течение года Никита завершил более
+                  7&nbsp;проектов.
+                </p>
+                <p>
+                  <u>В&nbsp;2018 году Никита поступил</u> на&nbsp;специальность
+                  &laquo;Информационные технологии&raquo;, где познакомился с&nbsp;фундаментальными
+                  языками программирования, такими как C, C++&nbsp;и&nbsp;C#. Параллельно
+                  с&nbsp;учебой проходил дополнительные курсы, включая известный гарвардский курс
+                  &laquo;CS50. Основы программирования&raquo; и&nbsp;изучал компьютерные науки.
+                  В&nbsp;этом&nbsp;же году Никита сотрудничал с&nbsp;двумя заказчиками. Для первого
+                  клиента разработал 2&nbsp;веб-сайта и&nbsp;организовал рекламные кампании. Для
+                  второго заказчика созданы 3&nbsp;сайта и&nbsp;начато долгосрочное сотрудничество.
+                </p>
+                <p>
+                  <u>В&nbsp;2019 году Никита разработал</u> игру
+                  <a
+                    href="https://github.com/yudinikita/tetris-oop"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Открыть репозиторий Тетриса на GitHub"
+                    >&laquo;Тетрис&raquo;</a
+                  >
+                  для курсового проекта, написанную на C#. Вместе с&nbsp;этим Никита изучил паттерны
+                  проектирования и&nbsp;алгоритмы. В&nbsp;то&nbsp;же время Никита прошел углубленный
+                  курс по&nbsp;HTML, CSS, JavaScript и&nbsp;TypeScript, что привело к&nbsp;созданию
+                  более чем 5&nbsp;веб-сайтов. В&nbsp;конце года Никита совместно с&nbsp;партнерами
+                  создал интернет-магазин по&nbsp;продаже дверей.
+                </p>
+                <p>
+                  <u>В&nbsp;середине 2020 года Никита повышает</u> квалификацию в&nbsp;области
+                  дизайна. Пройдя 9&nbsp;курсов и&nbsp;прочитав более 15&nbsp;книг, он&nbsp;получил
+                  знания о&nbsp;проектировании лендингов, интернет-магазинов, логотипов, фирменного
+                  стиля, информационных сайтов и&nbsp;многого другого. Кроме того, Никита получил
+                  практический опыт работы с&nbsp;графическими инструментами, такими как Photoshop
+                  и&nbsp;Figma.
+                </p>
+                <p>
+                  <u>В&nbsp;апреле 2021 года Никита приступил</u> к&nbsp;написанию дипломной работы
+                  на&nbsp;платформе 1С:Предприятие по&nbsp;теме
+                  <a
+                    href="https://github.com/yudinikita/1c-enterprise-college"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Открыть репозиторий автоматизацию учебного заведения на GitHub"
+                    >&laquo;Автоматизация учебного заведения&raquo;</a
+                  >. В&nbsp;течение трех месяцев он&nbsp;посвятил себя этой задаче.
+                  В&nbsp;дополнение к&nbsp;этому, Никита написал еще 3&nbsp;дипломные работы.
+                  В&nbsp;этом&nbsp;же году Никита разработал дизайн и&nbsp;воплотил в&nbsp;жизнь
+                  <a
+                    href="https://github.com/yudinikita/s-equipment-repair"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Открыть репозиторий сайта по ремонту стиральных машин на GitHub"
+                    >сайт</a
+                  >
+                  для знакомого, который владеет бизнесом по&nbsp;ремонту стиральных машин.
+                </p>
+                <p>
+                  <u>К&nbsp;концу 2021 года Никита стал</u> частью команды дизайн-бюро
+                  в&nbsp;качестве удаленного Frontend-разработчика. В&nbsp;обязанности входила
+                  разработка пользовательского интерфейса на&nbsp;React, Next.js, Redux. Кроме того,
+                  Никита выявлял и&nbsp;устранял баги, проводил рефакторинг и&nbsp;оптимизацию кода,
+                  интеграцию с&nbsp;сервером и&nbsp;настроил кастомизацию дизайн-системы Antd.
+                </p>
+                <p>
+                  <u>В&nbsp;конце рабочего дня Никита посвящал</u> время разработке пет-проекта под
+                  названием
+                  <a
+                    href="https://github.com/yudinikita/expense-tracker"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Открыть репозиторий проекта Денежки на GitHub"
+                    >&laquo;Денежки&raquo;</a
+                  >. Изначально созданный на&nbsp;JavaScript, с&nbsp;использованием Rest API
+                  и&nbsp;ExpressJS, проект в&nbsp;дальнейшем переделан на&nbsp;TypeScript, GraphQL
+                  и&nbsp;Fastify. Никита разработал дизайн в&nbsp;Figma, написал сервер
+                  на&nbsp;NodeJS, настроил CI/CD, внедрил Storybook, разработал клиентскую часть
+                  на&nbsp;React, покрыл проект тестами с&nbsp;использованием Jest, добавил переводы
+                  на&nbsp;шесть языков, реализовал смену темы и&nbsp;добавил поддержку PWA для
+                  работы без подключения к&nbsp;интернету.
+                </p>
+                <p>
+                  <u>В&nbsp;2022 году Никита разработал</u> два сайта, с&nbsp;использованием NextJS,
+                  и&nbsp;выложил бесплатно на&nbsp;GitHub:
+                  <a
+                    href="https://github.com/yudinikita/kinopoisk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Открыть репозиторий сайта Редизайн Кинопоиска на GitHub"
+                    >Редизайн Кинопоиска</a
+                  >
+                  и&nbsp;<a
+                    href="https://github.com/yudinikita/gruzelectric"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Открыть репозиторий сайта Грузового Автоэлектрика на GitHub"
+                    >Грузовой Автоэлектрик</a
+                  >. В&nbsp;июле этого года Никита создал игру под названием
+                  <a
+                    href="https://github.com/yudinikita/rick-survival"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Открыть репозиторий игры Rick Survival на GitHub"
+                    >&laquo;Rick Survival&raquo;</a
+                  >
+                  в&nbsp;жанре рогалик. Сразу после выпуска &laquo;Rick Survival&raquo;, Никита
+                  приступил к&nbsp;созданию следующей игры, получившей название
+                  <a
+                    href="https://github.com/yudinikita/dodging-fish"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Открыть репозиторий игры Dodging Fish на GitHub"
+                    >&laquo;Dodging Fish&raquo;</a
+                  >. Цель которой заключается в&nbsp;уклонении от&nbsp;шипов для маленькой рыбки.
+                  В&nbsp;процессе разработки использовались Phaser3, Vite и&nbsp;TypeScript.
+                </p>
+                <p>
+                  <u>В&nbsp;2023 году Никита создал</u>
+                  <a
+                    href="https://github.com/yudinikita/vscode-theme-kite"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Открыть репозиторий темы Kite Theme for VS Code на GitHub"
+                    >тему</a
+                  >
+                  для Visual Studio Code и&nbsp;опубликовал на&nbsp;GitHub, где она успела собрать
+                  более 3000&nbsp;установок. Также он&nbsp;разработал шаблон для создания игр
+                  в&nbsp;Godot Engine, который получил название
+                  <a
+                    href="https://github.com/yudinikita/godot-game-template-extended"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Открыть репозиторий шаблона Godot Game Template Extended на GitHub"
+                    >&laquo;Godot Game Template Extended&raquo;</a
+                  >. В&nbsp;дополнение к&nbsp;этому, Никита разработал аддон для того&nbsp;же
+                  шаблона,
+                  <a
+                    href="https://github.com/yudinikita/godot-spin-button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Открыть репозиторий аддона Godot Spin Button на GitHub"
+                    >&laquo;Godot Spin Button&raquo;</a
+                  >, предоставляющий кнопку для выбора значений из&nbsp;выпадающего списка. Аддон
+                  получил более 30&nbsp;звезд на&nbsp;GitHub.
+                </p>
+                <p>
+                  <u>К&nbsp;2024 году у&nbsp;Никиты завершено</u> более 10&nbsp;проектов. Многие
+                  из&nbsp;них доступны в&nbsp;свободном доступе на&nbsp;GitHub. Никита
+                  специализируется на&nbsp;разработке веб-приложений и&nbsp;имеет опыт работы
+                  с&nbsp;различными технологиями: JavaScript, TypeScript, React, NextJS, GraphQL,
+                  NodeJS и&nbsp;многие другие.
+                </p>
+                <p>
+                  <u>На&nbsp;данный момент Никита работает</u> над новым проектом. Всю актуальную
+                  информацию можно найти в&nbsp;<a
+                    href="https://t.me/yudinikita_blog"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Открыть телеграм-канал Никиты Юдина"
+                    >телеграм-канале</a
+                  >. Вы&nbsp;можете связаться с&nbsp;Никитой по&nbsp;любому интересующему Вас
+                  вопросу:
+                  <a
+                    href="mailto:mail@yudinikita.ru?"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Написать на почту Никите Юдину"
+                    >mail@yudinikita.ru</a
+                  >, а&nbsp;также подписаться на&nbsp;социальные сети:
+                  <a
+                    href="https://github.com/yudinikita"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Открыть страницу Никиты Юдина на GitHub"
+                    >GitHub</a
+                  >,
+                  <a
+                    href="https://t.me/yudinikita_blog"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Открыть телеграм-канал Никиты Юдина"
+                    >Telegram</a
+                  >,
+                  <a
+                    href="https://vk.ru/yudinikita"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Открыть страницу Никиты Юдина во ВКонтакте"
+                    >ВКонтакте</a
+                  >.
+                </p>
+              </div>
+              <a
+                class="social__button"
+                href="https://t.me/yudinikita_blog"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  role="img"
+                >
+                  <path
+                    d="m1.77404283
+              9.58769086c4.67714245-1.99564845 7.79596997-3.31130205 9.35648257-3.9469608
+              4.4555806-1.81493491 5.381412-2.13020854
+              5.984856-2.14061906.1327219-.0022897.4294781.02992311.6217044.18267827.162312.12898346.2069705.30322179.2283411.42551228.0213705.12229049.047982.40087134.0268279.61854631-.2414495
+              2.48450744-1.2861975 8.51375174-1.817706 11.29644264-.2249011 1.1774608-.6709749
+              1.4294697-1.0996928
+              1.4681058-.9317032.0839651-1.6359598-.4602232-2.5383599-1.0395344-1.412078-.9065075-1.9311138-1.1506648-3.30178003-2.0352487-1.58404193-1.0222898-.71982554-1.5573792.18291533-2.4756292.23625159-.2403103
+              4.3705401-3.98382431
+              4.4499945-4.31554914.0099371-.04148774-.12607-.45629906-.2198814-.53795815s-.2322689-.05373486-.3321837-.03152647c-.1416262.03147972-2.397439
+              1.49167812-6.76743852
+              4.38059516-.64030496.4305972-1.22027332.6403987-1.73990507.6294043-.5728523-.0121204-1.67479033-.3172064-2.49396798-.5779863-1.00475474-.3198572-1.37564449-.4704946-1.30610794-1.013711.03621894-.2829407.29151946-.57846124.76590154-.88656154z"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+                <span>Telegram</span>
+              </a>
+            </article>
+          </div>
+        </section>
+        <section class="projects">
+          <div class="container">
+            <section class="project">
+              <div class="projects__hero">
+                <a
+                  href="/images/godot-spin-button/godot-spin-button-1280w.jpg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Открыть обложку аддона Godot Spin Button"
+                >
+                  <picture>
+                    <source
+                      type="image/webp"
+                      sizes=" (max-width: 768px) 768px,
+                              (max-width: 1280w) 1280w,
+                              100vw"
+                      srcset="
+                        /images/godot-spin-button/godot-spin-button-768w.webp   768w,
+                        /images/godot-spin-button/godot-spin-button-1280w.webp 1280w
+                      "
+                    />
+                    <img
+                      srcset="
+                        /images/godot-spin-button/godot-spin-button-1280w.jpg 1280w,
+                        /images/godot-spin-button/godot-spin-button-768w.jpg   768w
+                      "
+                      sizes=" (max-width: 768px) 768px,
+                              (max-width: 1280px) 1280px,
+                              100vw"
+                      src="/images/godot-spin-button/godot-spin-button-1280w.jpg"
+                      loading="lazy"
+                      alt="Обложка аддона Godot Spin Button"
+                      width="1280"
+                      height="720"
+                    />
+                  </picture>
+                </a>
+              </div>
+              <article class="projects__content">
+                <h3 class="projects__title"><u>Godot Spin Button</u></h3>
+                <p>
+                  Аддон добавляет новый элемент
+                  <a
+                    href="https://github.com/yudinikita/godot-spin-button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >&laquo;SpinButton&raquo;</a
+                  >, который можно представить как выпадающий список, где навигация осуществляется
+                  с&nbsp;помощью кнопок &laquo;Следующий&raquo; и&nbsp;&laquo;Предыдущий&raquo;.
+                  Благодаря использованию этого аддона, пользователи могут удобно выбирать
+                  параметры, тем самым улучшая пользовательский опыт в&nbsp;проектах Godot.
+                </p>
+                <p>
+                  Godot Spin Button имеет модульную структуру и&nbsp;позволяет использовать только
+                  необходимые модули для уменьшения размера и&nbsp;улучшения читаемости кода. Аддон
+                  обеспечивает богатый API, позволяя создавать собственную пагинацию, кнопки
+                  навигации, эффекты и&nbsp;многое другое. SpinButton включает в&nbsp;себя все
+                  встроенные элементы навигации, такие как пагинация, навигационные стрелки,
+                  всплывающее окно, заголовок и&nbsp;описанием. Это лишь некоторые
+                  из&nbsp;возможностей SpinButton.
+                </p>
+              </article>
+            </section>
+            <section class="project">
+              <div class="projects__hero">
+                <a
+                  href="/images/ggte/ggte-1280w.jpg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Открыть обложку шаблона GGTE"
+                >
+                  <picture>
+                    <source
+                      type="image/webp"
+                      sizes=" (max-width: 768px) 768px,
+                              (max-width: 1280w) 1280w,
+                              100vw"
+                      srcset="/images/ggte/ggte-768w.webp 768w, /images/ggte/ggte-1280w.webp 1280w"
+                    />
+                    <img
+                      srcset="/images/ggte/ggte-1280w.jpg 1280w, /images/ggte/ggte-768w.jpg 768w"
+                      sizes=" (max-width: 768px) 768px,
+                              (max-width: 1280px) 1280px,
+                              100vw"
+                      src="/images/ggte/ggte-1280w.jpg"
+                      loading="lazy"
+                      alt="Обложка шаблона Godot Game Template Extended"
+                      width="1280"
+                      height="720"
+                    />
+                  </picture>
+                </a>
+              </div>
+              <article class="projects__content">
+                <h3 class="projects__title"><u>Godot Game Template Extended</u></h3>
+                <p>
+                  <a
+                    href="https://github.com/yudinikita/godot-game-template-extended"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >&laquo;GGTE&raquo;</a
+                  >
+                  представляет собой шаблон для разработки игр, созданный для Godot Engine&nbsp;4.x
+                  с&nbsp;целью увеличения производительности разработчиков. Этот шаблон охватывает
+                  многие аспекты разработки игр, начиная от&nbsp;структурирования проекта
+                  и&nbsp;отладки, и&nbsp;заканчивая тестированием кода. Будь вы&nbsp;опытным
+                  разработчиком игр или начинающим энтузиастом, GGTE&nbsp;&mdash; ваш идеальный
+                  старт для игровых джемов и&nbsp;личных проектов, предоставляя готовый рабочий
+                  процесс.
+                </p>
+                <p>
+                  Одной из&nbsp;ключевых особенностей GGTE является менеджер сцен, обеспечивающий
+                  удобное управление сценами и&nbsp;плавные переходы между ними. Шаблон также
+                  включает в&nbsp;себя готовый модули, такие как непрерывная интеграция,
+                  настраиваемые заставки, базовая навигация по&nbsp;меню, приостановка
+                  и&nbsp;возобновление геймплея, точное управление настройками игры, сохранение игры
+                  и&nbsp;поддержка локализации. С&nbsp;GGTE создание уникальных игр становится
+                  легким и&nbsp;эффективным процессом.
+                </p>
+              </article>
+            </section>
+            <section class="project">
+              <div class="projects__hero">
+                <a
+                  href="/images/kite/kite-1280w.jpg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Открыть обложку темы Kite Theme for VS Code"
+                >
+                  <picture>
+                    <source
+                      type="image/webp"
+                      sizes=" (max-width: 768px) 768px,
+                              (max-width: 1280w) 1280w,
+                              100vw"
+                      srcset="/images/kite/kite-768w.webp 768w, /images/kite/kite-1280w.webp 1280w"
+                    />
+                    <img
+                      srcset="/images/kite/kite-1280w.jpg 1280w, /images/kite/kite-768w.jpg 768w"
+                      sizes=" (max-width: 768px) 768px,
+                              (max-width: 1280px) 1280px,
+                              100vw"
+                      src="/images/kite/kite-1280w.jpg"
+                      loading="lazy"
+                      alt="Обложка темы Kite Theme for VS Code"
+                      width="1280"
+                      height="720"
+                    />
+                  </picture>
+                </a>
+              </div>
+              <article class="projects__content">
+                <h3 class="projects__title"><u>Kite Theme for VS Code</u></h3>
+                <p>
+                  Kite Theme&nbsp;&mdash; это современная и&nbsp;стильная тема, которая выглядит
+                  очень круто благодаря своим разнообразным цветам и&nbsp;простому дизайну,
+                  обеспечивая визуально приятный опыт для пользователей. Предлагая выбор между
+                  вариантами Kite Light, Kite Dark и&nbsp;Kite Darker, пользователи могут выбрать
+                  комфортную для себя среду в&nbsp;соответствии со&nbsp;своими предпочтениями
+                  и&nbsp;оптимизировать рабочий процесс.
+                </p>
+                <p>
+                  Кроме того,
+                  <a
+                    href="https://github.com/yudinikita/vscode-theme-kite"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Kite Theme</a
+                  >
+                  поддерживает различные языки программирования, что повышает
+                  ее&nbsp;универсальность для разработчиков. Среди поддерживаемых
+                  языков&nbsp;&mdash; C, C++, Clojure, C#, CSS, Dart, Go, HTML, Java, JavaScript,
+                  JSON, JSX, Kotlin, Markdown, PHP, Python, Ruby, Rust, Scala, SCSS, Swift,
+                  TypeScript и&nbsp;YAML. Такая широкая поддержка языков гарантирует, что
+                  разработчики различных специальностей смогут воспользоваться преимуществами темы
+                  Kite, что делает ее&nbsp;привлекательным и&nbsp;удобным выбором.
+                </p>
+              </article>
+            </section>
+          </div>
+        </section>
+      </main>
+      <footer class="page__footer" itemscope itemtype="http://schema.org/WPFooter">
+        <meta itemprop="copyrightYear" content="2024" />
+        <meta itemprop="copyrightHolder" content="Никита Юдина" />
+        <div class="container">
+          <div class="footer__hero">
+            <a
+              class="footer__logo"
+              href="https://t.me/yudinikita_blog"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Открыть Telegram канал Никиты Юдина"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="34"
+                height="34"
+                viewBox="0 0 35 35"
+                role="img"
+              >
+                <g fill="#fff" fill-rule="evenodd" clip-path="url(#b)" transform="translate(1 6)">
+                  <path
+                    d="M0 24h4.403V10.703L17.74 24V10.5L13.304 3v10.297L0 0v24Zm22.169 0h4.443l-.003-10.477L34 0h-5.324L24.35 8.283 20.107 0h-5.324l7.386 13.523V24Z"
+                  />
+                </g>
+              </svg>
+            </a>
+          </div>
+          <div class="footer__text">
+            <p>Вы&nbsp;можете связаться с&nbsp;Никитой по&nbsp;любому интересующему Вас вопросу:</p>
+            <a class="footer__mail" href="mailto:mail@yudinikita.ru">mail@yudinikita.ru</a>
+            <p>Вы&nbsp;также можете подписаться на&nbsp;социальные сети:</p>
+            <p class="footer__social">
+              <a
+                href="https://github.com/yudinikita"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer__link"
+                >GitHub</a
+              >,
+              <a
+                href="https://t.me/yudinikita_blog"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer__link"
+                >Telegram</a
+              >,
+              <a
+                href="https://vk.ru/yudinikita"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer__link"
+                >ВКонтакте
+              </a>
+            </p>
+            <p class="footer__copyright">&copy;&nbsp;2024 Сайт Никиты Алексеевича Юдина</p>
+            <p class="footer__legal">
+              Автор данных проектов не&nbsp;несет ответственности за&nbsp;любые последствия
+              от&nbsp;их&nbsp;использования. Данный ресурс носит исключительно ознакомительный
+              характер и&nbsp;не&nbsp;является публичной офертой.
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

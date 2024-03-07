@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+				xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+				xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://yudinikita.ru/</loc>
+		<xhtml:link rel="alternate" hreflang="en" href="https://yudinikita.ru/en/" />
+		<xhtml:link rel="alternate" hreflang="x-default" href="https://yudinikita.ru/en/" />
+    <lastmod>2024-03-07</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.9</priority>
+		<image:image>
+      <image:loc>https://yudinikita.ru/images/hero/hero-1920w.jpg</image:loc>
+			<image:caption>Фото инженера-программиста Никиты Юдина</image:caption>
+			<image:title>Фото Никиты Юдина</image:title>
+    </image:image>
+		<image:image>
+      <image:loc>https://yudinikita.ru/images/icons/android-chrome-512x512.png</image:loc>
+			<image:caption>Логотип Никиты Юдина</image:caption>
+			<image:title>Логотип Никиты Юдина</image:title>
+    </image:image>
+  </url>
+</urlset>

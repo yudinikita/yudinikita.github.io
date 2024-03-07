@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+  <head itemscope itemtype="http://schema.org/WPHeader">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#4f6177" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png" />
+    <link rel="mask-icon" href="/images/icons/safari-pinned-tab.svg" color="#4f6177" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <link rel="alternate" title="yudinikita.ru" href="https://yudinikita.ru" hreflang="ru" />
+    <link
+      rel="alternate"
+      title="Software Engineer Nikita Yudin from Russia"
+      href="https://yudinikita.ru/en"
+      hreflang="x-default"
+    />
+    <link rel="canonical" href="https://yudinikita.ru" />
+
+    <title itemprop="headline">Software Engineer Nikita Yudin from Russia</title>
+
+    <meta name="robots" content="index, follow" />
+    <meta
+      itemprop="description"
+      name="description"
+      content="By 2024, Nikita had completed more than 10 projects. Many of them are freely available on GitHub. Nikita specialises in web application development and has experience with a variety of technologies. These include JavaScript (TS), React, NextJS, GraphQL, NodeJS and many others."
+    />
+    <meta
+      itemprop="keywords"
+      name="keywords"
+      content="yudinikita, Nikita Yudin, Russia, Software Engineer, HTML, CSS, JavaScript, TypeScript, web, freelance, algorithms, design, React, Next.js, Redux, Frontend, Backend, GitHub, Rick Survival, Dodging Fish, mail@yudinikita.ru, Godot Spin Button"
+    />
+
+    <meta property="og:url" content="https://yudinikita.ru" />
+    <meta property="og:title" content="yudinikita.ru" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_EN" />
+    <meta
+      property="og:description"
+      content="By 2024, Nikita had completed more than 10 projects. Many of them are freely available on GitHub. Nikita specialises in web application development and has experience with a variety of technologies. These include JavaScript (TS), React, NextJS, GraphQL, NodeJS and many others."
+    />
+    <meta property="og:image" content="https://yudinikita.ru/images/social-share.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:height" content="1080" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:site_name" content="yudinikita" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "dateCreated": "2024-03-07T12:00:00-00:00",
+        "dateModified": "2024-03-07T12:00:00-00:00",
+        "mainEntity": {
+          "@type": "Person",
+          "name": "Nikita",
+          "familyName": "Yudin",
+          "additionalName": "Alekseevich",
+          "alternateName": "yudinikita",
+          "description": "Software Engineer from Russia",
+          "email": "mailto:mail@yudinikita.ru",
+          "jobTitle": "Software Engineer",
+          "gender": "Male",
+          "nationality": "RU",
+          "url": "http://yudinikita.ru",
+          "image": "https://yudinikita.ru/images/hero/hero-1920w.jpg",
+          "sameAs": [
+            "https://github.com/yudinikita",
+            "https://www.linkedin.com/in/yudinikita",
+            "https://facebook.com/yudinikita0",
+            "https://instagram.com/yudinikita0"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "RU",
+            "addressLocality": "St Petersburg",
+            "addressRegion": "St Petersburg",
+            "postalCode": "191040",
+            "streetAddress": "191040 Pushkinskaya str., 10"
+          },
+          "birthDate": "2001-04-15",
+          "birthPlace": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "RU",
+              "addressLocality": "Ryazan",
+              "addressRegion": "Ryazan region",
+              "postalCode": "190000"
+            }
+          },
+          "spouse": {
+            "@type": "Person",
+            "name": "Elizabeth",
+            "familyName": "Surova",
+            "additionalName": "Evgenievna",
+            "alternateName": "Lizyyyn",
+            "gender": "Female"
+          }
+        }
+      }
+    </script>
+
+    <style type="text/css">
+      @font-face {
+        font-family: 'Jost';
+        src: url('/fonts/Jost/Jost-Regular.eot');
+        src: local('Jost Regular'), local('Jost-Regular'),
+          url('/fonts/Jost/Jost-Regular.eot?#iefix') format('embedded-opentype'),
+          url('/fonts/Jost/Jost-Regular.woff2') format('woff2'),
+          url('/fonts/Jost/Jost-Regular.woff') format('woff'),
+          url('/fonts/Jost/Jost-Regular.ttf') format('truetype');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
+
+    <link href="/css/style.css" rel="stylesheet" />
+
+    <script type="text/javascript" defer>
+      const SCROLL_THRESHOLD = 50;
+
+      const applyEffect = () => {
+        const scrollPosition = window.scrollY;
+        const bioElement = document.querySelector('.bio');
+
+        if (scrollPosition >= SCROLL_THRESHOLD) {
+          bioElement.classList.add('hero-hide');
+          bioElement.classList.remove('hero-show');
+        } else {
+          bioElement.classList.remove('hero-hide');
+          bioElement.classList.add('hero-show');
+        }
+      };
+
+      const scrollToThreshold = () => {
+        window.scrollTo({
+          top: SCROLL_THRESHOLD,
+          behavior: 'smooth',
+        });
+      };
+
+      const onLoad = () => {
+        applyEffect();
+      };
+
+      const onScroll = () => {
+        applyEffect();
+      };
+
+      const onClickMore = () => {
+        scrollToThreshold();
+      };
+
+      addEventListener('load', onLoad);
+      addEventListener('scroll', onScroll);
+    </script>
+  </head>
+  <body>
+    <div id="root" class="page">
+      <main id="content" class="page__main" role="main">
+        <section class="bio">
+          <div class="container">
+            <section class="bio__hero">
+              <picture>
+                <source
+                  type="image/webp"
+                  sizes=" (max-width: 768px) 768px,
+                          (max-width: 1120px) 1120px,
+                          (max-width: 1920px) 1920px,
+                          (max-width: 2680px) 2680px,
+                          (max-width: 3440px) 3440px,
+                          100vw"
+                  srcset="
+                    /images/hero/hero-768w.webp   768w,
+                    /images/hero/hero-1120w.webp 1120w,
+                    /images/hero/hero-1920w.webp 1920w,
+                    /images/hero/hero-2680w.webp 2680w,
+                    /images/hero/hero-3440w.webp 3440w
+                  "
+                />
+                <img
+                  srcset="
+                    /images/hero/hero-3440w.jpg 3440w,
+                    /images/hero/hero-2680w.jpg 2680w,
+                    /images/hero/hero-1920w.jpg 1920w,
+                    /images/hero/hero-1120w.jpg 1120w,
+                    /images/hero/hero-768w.jpg   768w
+                  "
+                  sizes=" (max-width: 768px) 768px,
+                          (max-width: 1120px) 1120px,
+                          (max-width: 1920px) 1920px,
+                          (max-width: 2680px) 2680px,
+                          (max-width: 3440px) 3440px,
+                          100vw"
+                  src="/images/hero/hero-768px.jpg"
+                  alt="Photo by Nikita Yudin"
+                  title="Software Engineer Nikita Yudin from Russia"
+                  width="768"
+                  height="960"
+                />
+              </picture>
+              <header
+                class="hero__header"
+                itemscope
+                itemtype="http://schema.org/SiteNavigationElement"
+              >
+                <a
+                  class="social__logo"
+                  itemprop="url"
+                  href="https://t.me/yudinikita_blog"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Open Nikita Yudin's Telegram channel"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="34"
+                    height="34"
+                    viewbox="0 0 35 35"
+                    role="img"
+                  >
+                    <title>Logo Nikita Yudin</title>
+                    <defs>
+                      <clippath id="bb">
+                        <use xlink:href="#aa" fill-rule="evenodd" clip-rule="evenodd" />
+                      </clippath>
+                      <path id="aa" d="M36 0v36H0V0h36Z" />
+                    </defs>
+                    <path fill="none" d="M36 0v36H0V0h36Z" />
+                    <g fill-rule="evenodd" clip-path="url(#b)" transform="translate(1 6)">
+                      <path
+                        d="M0 24h4.403V10.703L17.74 24V10.5L13.304 3v10.297L0 0v24ZM22.169 24h4.443l-.003-10.477L34 0h-5.324L24.35 8.283 20.107 0h-5.324l7.386 13.523V24Z"
+                      />
+                    </g>
+                  </svg>
+                </a>
+                <div class="hero__social">
+                  <a
+                    class="social__github"
+                    itemprop="url"
+                    href="https://github.com/yudinikita"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Open Nikita Yudin's GitHub profile"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="34"
+                      height="34"
+                      viewBox="0 0 98 96"
+                      role="img"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    class="social__button"
+                    href="https://www.linkedin.com/in/yudinikita/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Discover LinkedIn Nikita Yudin"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      role="img"
+                    >
+                      <path
+                        d="M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"
+                      />
+                    </svg>
+                    <span>LinkedIn</span>
+                  </a>
+                  <a
+                    class="social__mail"
+                    itemprop="url"
+                    href="mailto:mail@yudinikita.ru?"
+                    title="Email Nikita Yudin"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="34"
+                      height="34"
+                      viewBox="0 0 20 20"
+                      role="img"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M18.333 2.5c.92 0 1.667.746 1.667 1.667v11.666c0 .92-.746 1.667-1.667 1.667H1.667C.747 17.5 0 16.754 0 15.833V4.167C0 3.247.746 2.5 1.667 2.5h16.666ZM7.168 11.328l-4.91 4.852h15.325l-4.857-4.802L10 13.265l-2.832-1.937ZM18.64 7.292l-4.796 3.316 4.796 4.736V7.292Zm-17.279.061v7.836l4.686-4.631-4.686-3.205Zm16.956-3.532H1.698a.358.358 0 0 0-.25.086.26.26 0 0 0-.085.222v1.62L10 11.656l8.644-5.965V4.199c.001-.134-.03-.231-.092-.292a.306.306 0 0 0-.234-.086Z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </header>
+              <article class="hero__text" aria-hidden="true">
+                <h1 class="hero__title">Software Engineer Nikita Yudin from&nbsp;Russia</h1>
+                <div class="hero__content">
+                  <p>
+                    By&nbsp;2024, Nikita has completed over 10&nbsp;projects, many of&nbsp;which are
+                    freely available on&nbsp;GitHub. Specialising in&nbsp;web application
+                    development, Nikita has experience working with a&nbsp;varietyof technologies,
+                    including JavaScript, TypeScript, React, NextJS, GraphQL, NodeJS, and more.
+                  </p>
+                </div>
+              </article>
+              <button
+                class="hero__more"
+                type="button"
+                aria-label="Read more about Nikita Yudin's biography"
+                title="Read more about Nikita Yudin's biography"
+                onclick="onClickMore()"
+              >
+                <span>Read More</span>
+              </button>
+            </section>
+            <article class="bio__content">
+              <h1 class="bio__title">Software Engineer Nikita Yudin from&nbsp;Russia</h1>
+              <div class="bio__text">
+                <p>
+                  <u>In&nbsp;early 2016, Nikita began</u> his programming journey with
+                  an&nbsp;introduction to&nbsp;HTML and CSS. This served as&nbsp;a&nbsp;starting
+                  point for creating his first website. At&nbsp;the time, Nikita was studying Pascal
+                  in&nbsp;his Computer Science class and self-studying the Python programming
+                  language after class. Eventually, Nikita realized that programming had become his
+                  hobby.
+                </p>
+                <p>
+                  <u>In&nbsp;2017, Nikita expanded</u> his knowledge of&nbsp;web technologies
+                  by&nbsp;learning Wordpress, JavaScript, jQuery and PHP. This enabled him
+                  to&nbsp;complete his first freelance order for a&nbsp;construction company
+                  to&nbsp;develop a&nbsp;website. Throughout the year, Nikita completed over
+                  7&nbsp;projects.
+                </p>
+                <p>
+                  <u>In&nbsp;2018, Nikita enrolled</u> in&nbsp;the Information Technology
+                  specialisation, where he&nbsp;learned fundamental programming languages such
+                  as&nbsp;C, C++, and C#. Alongside his studies, he&nbsp;took additional courses,
+                  including the renowned Harvard course &rsquo;CS50: Fundamentals
+                  of&nbsp;Programming&rsquo;, and studied computer science. During the same year,
+                  Nikita collaborated with two clients. For the first client, he&nbsp;developed two
+                  websites and organised advertising campaigns. For the second client, the
+                  proofreader developed three websites and initiated a&nbsp;long-term collaboration.
+                </p>
+                <p>
+                  <u>In&nbsp;2019, Nikita developed</u> a&nbsp;<a
+                    href="https://github.com/yudinikita/tetris-oop"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Open the Tetris repository on GitHub"
+                    >Tetris game</a
+                  >
+                  using C# for a&nbsp;course project. During this project, Nikita gained knowledge
+                  in&nbsp;design patterns and algorithms. Additionally, Nikita completed
+                  an&nbsp;in-depth course in&nbsp;HTML, CSS, JavaScript, and TypeScript, resulting
+                  in&nbsp;the creation of&nbsp;five websites. Finally, Nikita collaborated with
+                  partners to&nbsp;create an&nbsp;online shop selling doors.
+                </p>
+                <p>
+                  <u>In&nbsp;the middle of&nbsp;2020, Nikita upgraded</u> his design qualifications.
+                  He&nbsp;completed 9&nbsp;courses and read over 15&nbsp;books, gaining knowledge
+                  in&nbsp;designing loans, online shops, logos, corporate identities, informational
+                  websites, and more. Additionally, Nikita gained practical experience with graphic
+                  tools like Photoshop and Figma.
+                </p>
+                <p>
+                  <u>In&nbsp;April 2021, Nikita began</u> writing his diploma thesis on&nbsp;the
+                  topic of
+                  <a
+                    href="https://github.com/yudinikita/1c-enterprise-college"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Open a repository for school automation on GitHub"
+                    >&rsquo;Automation of&nbsp;an&nbsp;Educational Institution&rsquo;</a
+                  >
+                  using the 1C:Enterprise platform. He&nbsp;devoted three months to&nbsp;this task
+                  and also completed three additional theses. During the same year, Nikita designed
+                  and developed a&nbsp;<a
+                    href="https://github.com/yudinikita/s-equipment-repair"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Open a repository for a washing machine repair website on GitHub"
+                    >website</a
+                  >
+                  for an&nbsp;acquaintance who owns a&nbsp;washing machine repair business.
+                </p>
+                <p>
+                  <u>By&nbsp;the end of&nbsp;2021, Nikita joined</u> the design office team
+                  as&nbsp;a&nbsp;remote Frontend developer. His responsibilities included developing
+                  the user interface using React, Next.js, and Redux. Additionally, Nikita
+                  identified and fixed bugs, performed code refactoring and optimization, integrated
+                  the server, and customized the Antd design system.
+                </p>
+                <p>
+                  <u>At&nbsp;the end of&nbsp;the workday, Nikita spent</u> time developing
+                  a&nbsp;pet project named
+                  <a
+                    href="https://github.com/yudinikita/expense-tracker"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Open the repository of the Denezhki project on GitHub"
+                    >&rsquo;Denezhki&rsquo;</a
+                  >. The project was initially created using JavaScript, Rest API, and ExpressJS,
+                  but was later converted to&nbsp;TypeScript, GraphQL, and Fastify. Nikita designed
+                  the project using Figma, developed the server with NodeJS, implemented Storybook
+                  for testing, and created the client-side with React. They also added translations
+                  in&nbsp;six languages, implemented theme changes, and added PWA support for
+                  offline use. The project was tested using Jest.
+                </p>
+                <p>
+                  <u>In&nbsp;2022, Nikita developed</u> two websites using NextJS and uploaded them
+                  for free on&nbsp;GitHub:
+                  <a
+                    href="https://github.com/yudinikita/kinopoisk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Open the Kinopoisk Redesign website repository on GitHub"
+                    >Kinopoisk Redesign</a
+                  >
+                  and
+                  <a
+                    href="https://github.com/yudinikita/gruzelectric"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Open the Cargo Autoelectric's website repository on GitHub"
+                    >Truck auto Electrician</a
+                  >. In&nbsp;July of&nbsp;this year, Nikita created a&nbsp;game called &rsquo;Rick
+                  Survival&rsquo; in&nbsp;the roguelike genre. Immediately after the release of
+                  <a
+                    href="https://github.com/yudinikita/rick-survival"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Open the Rick Survival game repository on GitHub"
+                    >&rsquo;Rick Survival&rsquo;</a
+                  >, Nikita began developing the next game,
+                  <a
+                    href="https://github.com/yudinikita/dodging-fish"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Open the Dodging Fish game repository on GitHub"
+                    >&rsquo;Dodging Fish&rsquo;</a
+                  >, which requires players to&nbsp;help a&nbsp;small fish avoid spikes. The
+                  development process involved the use of&nbsp;Phaser3, Vite, and TypeScript.
+                </p>
+                <p>
+                  <u>In&nbsp;2023, Nikita created</u> a&nbsp;<a
+                    href="https://github.com/yudinikita/vscode-theme-kite"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Open the Kite Theme for VS Code repository on GitHub"
+                    >theme</a
+                  >
+                  for Visual Studio Code and published it&nbsp;on&nbsp;GitHub, which received over
+                  3000&nbsp;installations. Additionally, Nikita developed a&nbsp;template for
+                  creating games in&nbsp;Godot Engine, named
+                  <a
+                    href="https://github.com/yudinikita/godot-game-template-extended"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Open the Godot Game Template Extended repository on GitHub"
+                    >&rsquo;Godot Game Template Extended&rsquo;</a
+                  >, and an&nbsp;accompanying addon called
+                  <a
+                    href="https://github.com/yudinikita/godot-spin-button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Open the Godot Spin Button addon repository on GitHub"
+                    >&rsquo;Godot Spin Button&rsquo;</a
+                  >.
+                </p>
+                <p>
+                  <u>By&nbsp;2024, Nikita has completed</u> over 10&nbsp;projects, many
+                  of&nbsp;which are freely available on&nbsp;GitHub. Specialising in&nbsp;web
+                  application development, Nikita has experience working with a&nbsp;varietyof
+                  technologies, including JavaScript, TypeScript, React, NextJS, GraphQL, NodeJS,
+                  and more.
+                </p>
+                <p>
+                  <u>Currently, Nikita is&nbsp;working</u> on&nbsp;a&nbsp;new project. For the
+                  latest updates, please refer to&nbsp;his
+                  <a
+                    href="https://t.me/yudinikita_blog"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Open Nikita Yudin's Telegram channel"
+                    >Telegram channel</a
+                  >. If&nbsp;you have any questions, you can contact Nikita at&nbsp;<a
+                    href="mailto:mail@yudinikita.ru?"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Email Nikita Yudin"
+                    >mail@yudinikita.ru</a
+                  >. Additionally, you can follow him on&nbsp;social media platforms such as&nbsp;
+                  <a
+                    href="https://github.com/yudinikita"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Open Nikita Yudin's page on GitHub"
+                    >GitHub</a
+                  >,
+                  <a
+                    href="https://t.me/yudinikita_blog"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Open Nikita Yudin's Telegram channel"
+                    >Telegram</a
+                  >,
+                  <a
+                    href="https://www.linkedin.com/in/yudinikita/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Open Nikita Yudin's LinkedIn profile"
+                    >LinkedIn</a
+                  >,
+                  <a
+                    href="https://www.facebook.com/yudinikita0/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Open Nikita Yudin's Facebook profile"
+                    >Facebook</a
+                  >,
+                  <a
+                    href="https://instagram.com/yudinikita/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Open Nikita Yudin's Instagram profile"
+                    >Instagram</a
+                  >.
+                </p>
+              </div>
+              <a
+                class="social__button"
+                href="https://www.linkedin.com/in/yudinikita/"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Discover LinkedIn Nikita Yudin"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  role="img"
+                >
+                  <path
+                    d="M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"
+                  />
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+            </article>
+          </div>
+        </section>
+        <section class="projects">
+          <div class="container">
+            <section class="project">
+              <div class="projects__hero">
+                <a
+                  href="/images/godot-spin-button/godot-spin-button-1280w.jpg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Open the cover of the Godot Spin Button addon"
+                >
+                  <picture>
+                    <source
+                      type="image/webp"
+                      sizes=" (max-width: 768px) 768px,
+                              (max-width: 1280w) 1280w,
+                              100vw"
+                      srcset="
+                        /images/godot-spin-button/godot-spin-button-768w.webp   768w,
+                        /images/godot-spin-button/godot-spin-button-1280w.webp 1280w
+                      "
+                    />
+                    <img
+                      srcset="
+                        /images/godot-spin-button/godot-spin-button-1280w.jpg 1280w,
+                        /images/godot-spin-button/godot-spin-button-768w.jpg   768w
+                      "
+                      sizes=" (max-width: 768px) 768px,
+                              (max-width: 1280px) 1280px,
+                              100vw"
+                      src="/images/godot-spin-button/godot-spin-button-1280w.jpg"
+                      loading="lazy"
+                      alt="Godot Spin Button addon cover artwork"
+                      width="1280"
+                      height="720"
+                    />
+                  </picture>
+                </a>
+              </div>
+              <article class="projects__content">
+                <h3 class="projects__title"><u>Godot Spin Button</u></h3>
+                <p>
+                  The addon adds a&nbsp;new
+                  <a
+                    href="https://github.com/yudinikita/godot-spin-button"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >&laquo;SpinButton&raquo;</a
+                  >
+                  element, which can be&nbsp;thought of&nbsp;as&nbsp;a&nbsp;drop-down list, where
+                  navigation is&nbsp;done using the &laquo;Next&raquo; and &laquo;Previous&raquo;
+                  buttons. By&nbsp;using this addon, users can conveniently select options, thus
+                  improving the user experience in&nbsp;Godot projects.
+                </p>
+                <p>
+                  Godot Spin Button has a&nbsp;modular structure and allows you to&nbsp;use only the
+                  necessary modules to&nbsp;reduce size and improve code readability. The addon
+                  provides a&nbsp;rich API that allows you to&nbsp;create your own pagination,
+                  navigation buttons, effects and more. SpinButton includes all the built-in
+                  navigation elements such as&nbsp;pagination, navigation arrows, popup, title and
+                  description. These are just a&nbsp;few of&nbsp;SpinButton&rsquo;s features.
+                </p>
+              </article>
+            </section>
+            <section class="project">
+              <div class="projects__hero">
+                <a
+                  href="/images/ggte/ggte-1280w.jpg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Open the cover of the GGTE template"
+                >
+                  <picture>
+                    <source
+                      type="image/webp"
+                      sizes=" (max-width: 768px) 768px,
+                              (max-width: 1280w) 1280w,
+                              100vw"
+                      srcset="/images/ggte/ggte-768w.webp 768w, /images/ggte/ggte-1280w.webp 1280w"
+                    />
+                    <img
+                      srcset="/images/ggte/ggte-1280w.jpg 1280w, /images/ggte/ggte-768w.jpg 768w"
+                      sizes=" (max-width: 768px) 768px,
+                              (max-width: 1280px) 1280px,
+                              100vw"
+                      src="/images/ggte/ggte-1280w.jpg"
+                      loading="lazy"
+                      alt="Cover of the Godot Game Template Extended"
+                      width="1280"
+                      height="720"
+                    />
+                  </picture>
+                </a>
+              </div>
+              <article class="projects__content">
+                <h3 class="projects__title"><u>Godot Game Template Extended</u></h3>
+                <p>
+                  <a
+                    href="https://github.com/yudinikita/godot-game-template-extended"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >&laquo;GGTE&raquo;</a
+                  >
+                  is&nbsp;a&nbsp;game development template created for Godot Engine&nbsp;4.x
+                  to&nbsp;increase developer productivity. This template covers many aspects
+                  of&nbsp;game development, from project structuring and debugging to&nbsp;code
+                  testing. Whether you&rsquo;re an&nbsp;experienced game developer
+                  or&nbsp;a&nbsp;budding enthusiast, GGTE is&nbsp;the perfect start for game jams
+                  and personal projects, providing a&nbsp;ready-made workflow.
+                </p>
+                <p>
+                  One of&nbsp;the key features of&nbsp;GGTE is&nbsp;the Scene Manager, which
+                  provides easy scene management and smooth transitions between scenes. The template
+                  also includes out-of-the-box modules such as&nbsp;continuous integration,
+                  customisable splash screens, basic menu navigation, pause and resume gameplay,
+                  precise management of&nbsp;game settings, game saving and localisation support.
+                  With GGTE, creating unique games becomes an&nbsp;easy and efficient process.
+                </p>
+              </article>
+            </section>
+            <section class="project">
+              <div class="projects__hero">
+                <a
+                  href="/images/kite/kite-1280w.jpg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="Open cover of the Kite Theme for VS Code"
+                >
+                  <picture>
+                    <source
+                      type="image/webp"
+                      sizes=" (max-width: 768px) 768px,
+                              (max-width: 1280w) 1280w,
+                              100vw"
+                      srcset="/images/kite/kite-768w.webp 768w, /images/kite/kite-1280w.webp 1280w"
+                    />
+                    <img
+                      srcset="/images/kite/kite-1280w.jpg 1280w, /images/kite/kite-768w.jpg 768w"
+                      sizes=" (max-width: 768px) 768px,
+                              (max-width: 1280px) 1280px,
+                              100vw"
+                      src="/images/kite/kite-1280w.jpg"
+                      loading="lazy"
+                      alt="Cover of the Kite Theme for VS Code"
+                      width="1280"
+                      height="720"
+                    />
+                  </picture>
+                </a>
+              </div>
+              <article class="projects__content">
+                <h3 class="projects__title"><u>Kite Theme for VS Code</u></h3>
+                <p>
+                  Kite Theme is&nbsp;a&nbsp;modern and stylish theme that looks very cool with its
+                  varied colours and simple design, providing a&nbsp;visually pleasing experience
+                  for users. With a&nbsp;choice of&nbsp;Kite Light, Kite Dark and Kite Darker
+                  options, users can choose a&nbsp;comfortable environment according to&nbsp;their
+                  preferences and optimise their workflow.
+                </p>
+                <p>
+                  In&nbsp;addition,
+                  <a
+                    href="https://github.com/yudinikita/vscode-theme-kite"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Kite Theme</a
+                  >
+                  supports various programming languages, which increases its versatility for
+                  developers. Supported languages include C, C++, Clojure, C#, CSS, Dart, Go, HTML,
+                  Java, JavaScript, JSON, JSX, Kotlin, Markdown, PHP, Python, Ruby, Rust, Scala,
+                  SCSS, Swift, TypeScript and YAML. This broad language support ensures that
+                  developers of&nbsp;various specialities can take advantage of&nbsp;the Kite theme,
+                  making it&nbsp;an&nbsp;attractive and user-friendly choice.
+                </p>
+              </article>
+            </section>
+          </div>
+        </section>
+      </main>
+      <footer class="page__footer" itemscope itemtype="http://schema.org/WPFooter">
+        <meta itemprop="copyrightYear" content="2024" />
+        <meta itemprop="copyrightHolder" content="Nikita Yudin" />
+        <div class="container">
+          <div class="footer__hero">
+            <a
+              class="footer__logo"
+              href="https://t.me/yudinikita_blog"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Open Nikita Yudin's Telegram channel"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="34"
+                height="34"
+                viewBox="0 0 35 35"
+                role="img"
+              >
+                <g fill="#fff" fill-rule="evenodd" clip-path="url(#b)" transform="translate(1 6)">
+                  <path
+                    d="M0 24h4.403V10.703L17.74 24V10.5L13.304 3v10.297L0 0v24Zm22.169 0h4.443l-.003-10.477L34 0h-5.324L24.35 8.283 20.107 0h-5.324l7.386 13.523V24Z"
+                  />
+                </g>
+              </svg>
+            </a>
+          </div>
+          <div class="footer__text">
+            <p>If&nbsp;you have any questions, please feel free to&nbsp;contact Nikita:</p>
+            <a class="footer__mail" href="mailto:mail@yudinikita.ru">mail@yudinikita.ru</a>
+            <p>You may also subscribe for social media:</p>
+            <p class="footer__social">
+              <a
+                href="https://github.com/yudinikita"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer__link"
+                >GitHub</a
+              >,
+              <a
+                href="https://www.linkedin.com/in/yudinikita/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer__link"
+                >LinkedIn</a
+              >,
+              <a
+                href="https://www.facebook.com/yudinikita0/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer__link"
+                >Facebook</a
+              >,
+              <a
+                href="https://instagram.com/yudinikita/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer__link"
+                >Instagram
+              </a>
+            </p>
+            <p class="footer__copyright">&copy;&nbsp;2024 Nikita Alekseevich Yudin's website</p>
+            <p class="footer__legal">
+              The author of&nbsp;these projects is&nbsp;not liable for any consequences resulting
+              from their use. This resource is&nbsp;for informational purposes only and does not
+              constitute a&nbsp;public offer.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
