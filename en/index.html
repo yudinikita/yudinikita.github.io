@@ -947,42 +947,27 @@
     </style>
 
     <script type="text/javascript" defer>
-      const SCROLL_THRESHOLD = 50;
-
-      const applyEffect = () => {
-        const scrollPosition = window.scrollY;
-        const bioElement = document.querySelector('.bio');
-
-        if (scrollPosition >= SCROLL_THRESHOLD) {
-          bioElement.classList.add('hero-hide');
-          bioElement.classList.remove('hero-show');
-        } else {
-          bioElement.classList.remove('hero-hide');
-          bioElement.classList.add('hero-show');
-        }
-      };
-
-      const scrollToThreshold = () => {
-        window.scrollTo({
-          top: SCROLL_THRESHOLD,
-          behavior: 'smooth',
-        });
-      };
-
-      const onLoad = () => {
-        applyEffect();
-      };
-
-      const onScroll = () => {
-        applyEffect();
-      };
-
-      const onClickMore = () => {
-        scrollToThreshold();
-      };
-
-      addEventListener('load', onLoad);
-      addEventListener('scroll', onScroll);
+      const SCROLL_THRESHOLD = 50,
+        applyEffect = () => {
+          const o = window.scrollY,
+            e = document.querySelector('.bio');
+          o >= 50
+            ? (e.classList.add('hero-hide'), e.classList.remove('hero-show'))
+            : (e.classList.remove('hero-hide'), e.classList.add('hero-show'));
+        },
+        scrollToThreshold = () => {
+          window.scrollTo({ top: 50, behavior: 'smooth' });
+        },
+        onLoad = () => {
+          applyEffect();
+        },
+        onScroll = () => {
+          applyEffect();
+        },
+        onClickMore = () => {
+          window.scrollTo({ top: 50, behavior: 'smooth' });
+        };
+      addEventListener('load', onLoad), addEventListener('scroll', onScroll);
     </script>
   </head>
   <body>
