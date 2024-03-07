@@ -129,22 +129,12 @@ u {
   font-size: 7vw;
 }
 .hero__content {
-  -webkit-background-clip: text;
-  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, black), to(transparent));
-  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
-  -webkit-transition: color 1s ease;
-  -o-transition: color 1s ease;
-  mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, black), to(transparent));
-  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
-  transition: color 1s ease;
-  background: -webkit-gradient(linear, left top, left bottom, from(hsl(0, 0%, 90%)), to(hsl(0, 0%, 20%)));
-  background: -o-linear-gradient(hsl(0, 0%, 90%), hsl(0, 0%, 20%));
-  background: linear-gradient(hsl(0, 0%, 90%), hsl(0, 0%, 20%));
-  background-clip: text;
-  height: 170px;
-  -webkit-text-fill-color: transparent;
-  overflow-y: visible;
-  color: var(--text-invert);
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(#e0e5eb), to(transparent));
+  -webkit-mask-image: linear-gradient(to bottom, #e0e5eb, transparent 100%);
+  mask-image: -webkit-gradient(linear, left top, left bottom, from(#e0e5ebd0), to(transparent));
+  mask-image: linear-gradient(to bottom, #e0e5ebd0, transparent 100%);
+  height: 150px;
+  color: #e0e5ebd0;
 }
 .hero__more {
   -webkit-border-radius: 100px;
